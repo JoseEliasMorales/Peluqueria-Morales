@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="Shortcun icon" href="./assets/Logo1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="../Styles/Styles.css" />
+    <link rel="Stylesheet" href="../Styles/Tablets.css"/>
+    <link rel="Stylesheet" href="../Styles/Desktop.css"/>
+    <title>Micaela Morales - Colorista </title>
+    <body>
+        <main class="body body--turnos">
+            <!--Cabecera-->
+            <header class="cabecera">
+                <!--Logo cabecera-->
+                <img class="logo" src="../assets/Cabecerapie/Logo4.png" alt="Logo de Micaela Morales" />
+                <!--Barra de navegacion-->
+                <nav  class="cabecera__nav" >
+                    <div class="cabecera__items">
+                        <input type="checkbox" id="check" class="checkbtn">
+                        <label for="check" class="cabecera__menuIcono">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                            role="img" class="iconify iconify--material-symbols" width="32" height="32"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                d="M4 5q-.425 0-.712-.288Q3 4.425 3 4t.288-.713Q3.575 3 4 3h16q.425 0 .712.287Q21 3.575 21 4t-.288.712Q20.425 5 20 5Zm0 16q-.425 0-.712-.288Q3 20.425 3 20t.288-.712Q3.575 19 4 19h16q.425 0 .712.288q.288.287.288.712t-.288.712Q20.425 21 20 21Zm0-8q-.425 0-.712-.288Q3 12.425 3 12t.288-.713Q3.575 11 4 11h16q.425 0 .712.287q.288.288.288.713t-.288.712Q20.425 13 20 13Z">
+                                </path>
+                            </svg>
+                        </label>
+                        <ul class="cabecera__menuDesp">
+                            <li class="menu__lista" ><a href="../Index.html">Inicio</a></li>
+                            <li class="menu__lista" ><a href="./Turnos.html">Turnos</a></li>
+                            <li class="menu__lista" ><a href="./GiftCard.html">Gift-Card</a></li>
+                            <li class="menu__lista" ><a href="./Servicios.html">Servicios</a></li>
+                            <li class="menu__lista" ><a href="./Contacto.html">Contacto</a></li>
+                        </ul> 
+                    </div>               
+                    <ul class="cabecera__menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./Turnos.html">Turnos</a></li>
+                        <li><a href="./GiftCard.html">Gift-Card</a></li>
+                        <li><a href="./Servicios.html">Servicios</a></li>
+                        <li><a href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article class="turnos">
+                <div class="titulos">Reserva tu turno</div>
+                <div class="turnos__form">                    
+                    <form class="form">                    
+                        <div class="form__info">
+                            <label for="nombre">
+                                Nombre
+                            </label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="form__info">
+                            <label for="telefono">
+                                Telefono
+                            </label>
+                            <input type="tel" pattern="[0-9]" id="telefono">
+                        </div>
+                        <div class="form__info">
+                            <div class="form__infoPregunta">¿Aceptas recibir whatsapp?</div>
+                            <span>Si</span>
+                            <input type="radio" name="confirmacion">
+                            <span>No</span>
+                            <input type="radio" name="confirmacion">
+                        </div>
+                        <div class="form__info">
+                            <select class="turnosSeleccion">
+                                <option selected="selected">Elige el trabajo que deseas hacerte</option>
+                                <option>Corte</option>
+                                <option>Corte y Nutricion</option>
+                                <option>Color</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form__info">
+                            <div class="form__infoComentarios">Comentarios</div>
+                            <label for="comentarios">
+                                <textarea name="comentarios" class="comentarios" id="comentarios" rows="10"
+                                    cols="100">Puedes dejarnos el detalle del trabajo aqui..</textarea>
+                            </label>
+                        </div>
+                        <!--Boton enviar sin programar-->
+                        <div class="form__boton">
+                            <button class="boton">Enviar</button>
+                        </div>
+                    </form>
+                </div>                
+            </article>
+            <!--Pie de pagina-->
+            <footer class="pie pie--turnos">
+                <!--Datos del cliente-->
+                <div class="pie__informacion">
+                    <div>MICAELA MORALES</div>
+                    <div>Colorista profesional</div>
+                    <div>Bahia Blanca, Buenos Aires, Argentina.</div>
+                </div>
+                <!--Enlaces a redes sociales-->
+                <!--Logo inferior-->
+                <img class="logo logo--inferior" src="../assets/Cabecerapie/Logo4.png">
+                <!--Enlaces a redes sociales-->
+                <ul class="pie__redes">
+                    <li class="pie__lista"><a href="https://www.instagram.com/micaelamorales.c" target="_blank"><img
+                                src="../assets/Cabecerapie/Instagram.png" alt="Enlace a Instagram" width="30px" /></a></li>
+                    <li class="pie__lista"><a
+                            href="https://api.whatsapp.com/send?phone=+5492914133736&text=Hola!%20Necesito%20hacerte%20una%20consulta!"
+                            target="_blank"><img src="../assets/Cabecerapie/Whatsapp.png" alt="Enlace a Whatsapp" width="30px" /></a></li>
+                </ul>
+            </footer>
+        </main>    
+    </body>
+</html>

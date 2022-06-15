@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+/* Formato enlaces */
+a{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+/* Formato Grid de la pagina Inicio */
+.body{   
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    /* grid-template-columns: 1fr  1fr; */
+    grid-template-rows: 1fr 80vh 1fr;
+    grid-template-areas:    "cabecera       cabecera"
+                            "contenido      contenido"
+                            "footer         footer";
+}
+
+/* Comienzo Header */
+.cabecera {
+    background-color: #000000;
+    grid-area: cabecera;
+    display: grid;
+    grid-template-areas: "logo  menu";
+    align-items: stretch;
+    font-size: 21px;
+}
+
+.logo {
+    width: 250px;
+    margin: 10px;
+    grid-area: logo;
+}
+
+.cabecera__nav{
+    align-self: center;
+}
+
+.cabecera__items{
+    height: 100%;
+}
+
+.cabecera__menuIcono {
+    color: #ffffff;
+    grid-area: menu;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cabecera__menuIconocross{
+    display: none;
+}
+
+.cabecera__menu {
+    display: none;
+}
+
+.checkbtn{
+    display: none;
+}
+/* Configuracion menu desplegable */
+
+.cabecera__menuDesp{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    background-color: #000000;
+    font-weight: 200;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    left: -100%;
+    transition: all .5s;
+    list-style-type: none;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.menu__lista{
+    padding: 20px;
+    border-top: 1px solid #838383;
+}
+
+.checkbtn:checked  ~.cabecera__menuDesp{
+    left: 0;
+}
+
+/* Fin Header */
+
+/* Comienzo footer */
+.pie {
+    background-color: #000000;
+    font-size: 15px;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "infopie   menupie";
+    align-items: center;
+}
+
+.pie__informacion {
+    grid-area: infopie;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.logo--inferior {
+    display: none;
+}
+
+.pie__redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pie__lista {
+    justify-content: space-between;
+}
+
+.instagram {
+    width: 30px;
+    color: #272727;
+    padding: 10px;
+}
+
+.whatsapp {
+    width: 30px;
+}
+/* Fin footer */
+
+/* Comienzo del contenido de la pagina */
+
+/* Configuacion del grid del cuerpo */
+.cuerpo {
+    grid-area: contenido;
+    background-image: url(../assets/Inicio/portada.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-areas:    "empty      logo"
+                            "frase      frase";
+}
+
+.cuerpo__logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.cuerpo__frase {
+    font-style: italic;
+    grid-area: frase;
+    align-self: center;
+    text-align: center;
+    text-shadow: 2px 3px 2px #ffffff;
+}
+
+.cuerpo__fraseLinea1 {
+    font-size: 28px;
+}
+
+.cuerpo__fraseLinea1--tamaño {
+    font-size: 35px;
+}
+
+/* Fin del cuerpo Inicio */
+
+/* Pagina Turnos */
+
+.body--turnos{
+    background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
+    background-size: cover;  
+    grid-template-rows: 1fr 86vh 1fr;
+    position: absolute;
+}
+
+.turnos{
+    grid-area: contenido;   
+    margin: 30px;
+    display: grid;
+    grid-template-areas:    "titulo"
+                            "form"
+                            "empty";  
+}
+
+.turnos__form{
+    font-weight: 600;
+    grid-area: form;
+    width: fit-content;
+    background-color: antiquewhite;
+    border: 2px solid #838383;
+    border-radius: 10px;
+    justify-self: center; 
+    background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;  
+}
+
+
+.titulos{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #272727;   
+}
+
+/* Configuracion formulario */
+.form{
+    position: relative;
+    color: #fff;  
+}
+
+.form__info{
+    padding: 10px;
+    text-shadow: 1px 1px 1px #272727;   
+}
+
+.form__infoPregunta{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.form__infoComentarios{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.comentarios{
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;    
+}
+
+.form__boton{
+    text-align: right;
+}
+
+/* Configuracion Boton formulario */
+.boton{
+    right: 30px;
+    cursor: pointer;
+    bottom: -17px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #272727;
+    position: absolute;
+}
+
+.boton:hover{
+    color: #272727;
+    background-color: #fff;
+}
+
+.pie--turnos{
+    height: 100px;
+}
+
+/* Fin de pagina turnos */
+
+/* Comienzo pagina Gift Card */
+
+.body--giftCard{
+    background-color: antiquewhite;
+    grid-template-rows: none;
+    position: absolute;
+}
+
+.turnos__form--gift{
+    background-image: url(../assets/GiftCard/peluG.jpg);
+    background-size: cover;
+}
+
+.giftCard__titulos{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    text-shadow: 2px 2px #fff;
+}
+
+
+.form--giftCard{
+    display: grid;
+    color: #272727;
+    grid-template-areas:    "tarjeta"
+                            "form";
+}
+/* Diseño tarjeta */
+
+
+.tarjeta{
+    grid-area: tarjeta;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+}
+
+.tarjeta__caja {  
+    position: relative;   
+    width: 200px;
+    height: 125px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #000000;
+    background-image: url(../assets/GiftCard/tarjeta.png);
+    background-size: cover;
+}
+
+.tarjeta__img {
+    position: absolute;
+    width: 65px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 60%;
+}
+
+.tarjeta__num {
+    position: absolute;
+    color: #c9c0c0;
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+.tarjeta__text {
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    margin-left: 30%;
+    margin-top: 25%;
+    color: whitesmoke;
+}
+
+.form__infoCaja{
+    grid-area: form;
+}
+
+/* fin pagina Gift Card */
+
+/* Comienzo pagina Contacto */
+
+.body--contacto{
+    background-color: antiquewhite;   
+}
+
+.contacto{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                              
+}
+
+.contanto__tituCaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos--contacto{
+    grid-area: titulo;
+    font-size: 24px;
+    margin: 15px;
+    color: #272727;
+    text-shadow: none;
+    font-weight: 700;   
+}
+
+.contacto__comentGrid{
+    grid-area: caja;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 80vh 1fr;
+    grid-template-areas:    "empty      coment        empty";
+}
+
+.contacto__cajaComent{
+    grid-area: coment;
+    position: relative;    
+}
+
+.comentarios--cont{
+    margin: 20px;
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contacto__visita{
+    grid-area: inst;
+    margin: 30px;
+    height: fit-content;
+    color: #272727;
+    font-weight: 600;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:    "contacto"
+                            "ventana";                       
+}
+
+.instaLogonombre{
+    align-content: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto__instagram{
+    grid-area: contacto;
+    font-size: 21px;
+    text-align: center;
+    
+}
+
+.instagram__perfil{
+    grid-area: ventana;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* Fin de Pagina contacto */
+
+/* Comienzo de pagina Servicios */
+
+.body--servicios{
+    background-color: #fff;
+    grid-template-rows: none;
+}
+
+.servicios{
+    grid-area: contenido;
+}
+
+.servicios__estructura{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.titulos--serv{
+    padding: 20px;
+    text-shadow: none;
+    color: #272727;
+}
+
+.fotosEstilos{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+}
+
+/* Diseño tarjeta */
+
+.card{
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    box-shadow:
+    2.6px 2.3px 1.2px rgba(0, 0, 0, 0.1),
+    5.8px 5px 2.7px rgba(0, 0, 0, 0.079),
+    9.8px 8.3px 4.5px rgba(0, 0, 0, 0.069),
+    14.8px 12.6px 6.9px rgba(0, 0, 0, 0.062),
+    21.3px 18.2px 9.9px rgba(0, 0, 0, 0.056),
+    30.1px 25.7px 14px rgba(0, 0, 0, 0.05),
+    42.7px 36.4px 19.9px rgba(0, 0, 0, 0.044),
+    62.1px 52.9px 28.8px rgba(0, 0, 0, 0.038),
+    95.6px 81.6px 44.4px rgba(0, 0, 0, 0.031),
+    170px 145px 79px rgba(0, 0, 0, 0.021);
+    width: 290px;
+    height: 550px;
+    padding: 15px;
+}
+
+.sub__card{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.servicios__card{
+    display: flex;
+    justify-content: center;
+}
+
+.servicios__imagenCorte{
+    background-image: url(../assets/Servicios/Corte1.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 260px;
+    height: 410px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.servicios__parrafo{
+    display: flex;
+    align-items: center;
+    width: 260px;
+    height: 410px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgba(241, 194, 194, 0.9);
+    transition: 0,5s;
+    -webkit-transition: 0,5s;
+    -moz-transition: 0,5s;
+    -ms-transition: 0,5s;
+    -o-transition: 0,5s;
+    opacity: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.parrafo{
+    font-size: 20px;
+}
+
+.servicios__parrafo:hover{
+    opacity: 1;
+}
+
+/* Imagenes de cada tarjeta */
+
+.servicios__imagenCorte--global{
+    background-image: url(../assets/Servicios/Global1.jpeg);
+}
+
+.servicios__imagenCorte--bala{
+    background-image: url(../assets/Servicios/Bala1.jpeg);
+}
+
+.servicios__imagenCorte--flam{
+    background-image: url(../assets/Servicios/Flam1.jpeg);
+}
+
+.servicios__imagenCorte--baño{
+    background-image: url(../assets/Servicios/Baño1.jpeg);
+}
+
+.servicios__imagenCorte--gorra{
+    background-image: url(../assets/Servicios/Gorra1.jpeg);
+}
+
+.servicios__imagenCorte--local{
+    background-image: url(../assets/Servicios/Local1.jpeg);
+}

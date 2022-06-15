@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="Shortcun icon" href="./assets/Logo1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="../Styles/Styles.css" />
+    <link rel="Stylesheet" href="../Styles/Tablets.css"/>
+    <link rel="Stylesheet" href="../Styles/Desktop.css"/>
+    <title>Micaela Morales - Colorista </title>
+    <body>
+        <main class="body body--giftCard">
+            <!--Cabecera-->
+            <header class="cabecera">
+                <!--Logo cabecera-->
+                <img class="logo" src="../assets/Cabecerapie/Logo4.png" alt="Logo de Micaela Morales" />
+                <!--Barra de navegacion-->
+                <nav  class="cabecera__nav" >
+                    <div class="cabecera__items">
+                        <input type="checkbox" id="check" class="checkbtn">
+                        <label for="check" class="cabecera__menuIcono">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                            role="img" class="iconify iconify--material-symbols" width="32" height="32"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                d="M4 5q-.425 0-.712-.288Q3 4.425 3 4t.288-.713Q3.575 3 4 3h16q.425 0 .712.287Q21 3.575 21 4t-.288.712Q20.425 5 20 5Zm0 16q-.425 0-.712-.288Q3 20.425 3 20t.288-.712Q3.575 19 4 19h16q.425 0 .712.288q.288.287.288.712t-.288.712Q20.425 21 20 21Zm0-8q-.425 0-.712-.288Q3 12.425 3 12t.288-.713Q3.575 11 4 11h16q.425 0 .712.287q.288.288.288.713t-.288.712Q20.425 13 20 13Z">
+                                </path>
+                            </svg>
+                        </label>
+                        <ul class="cabecera__menuDesp">
+                            <li class="menu__lista" ><a href="../Index.html">Inicio</a></li>
+                            <li class="menu__lista" ><a href="./Turnos.html">Turnos</a></li>
+                            <li class="menu__lista" ><a href="./GiftCard.html">Gift-Card</a></li>
+                            <li class="menu__lista" ><a href="./Servicios.html">Servicios</a></li>
+                            <li class="menu__lista" ><a href="./Contacto.html">Contacto</a></li>
+                        </ul> 
+                    </div>               
+                    <ul class="cabecera__menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./Turnos.html">Turnos</a></li>
+                        <li><a href="./GiftCard.html">Gift-Card</a></li>
+                        <li><a href="./Servicios.html">Servicios</a></li>
+                        <li><a href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article class="turnos">
+                <div class="giftCard__titulos">
+                    <div class="titulos">REGALA UN CAMBIO</div>
+                    <div class="sub">¡REGALA UNA GIFT CARD!</div>
+                </div>               
+                    <!--Formulario para la gift Card-->
+                    <div class="turnos__form turnos__form--gift">
+                        <form class="form form--giftCard">
+                            <div class="tarjeta">
+                                <div class="tarjeta__caja">
+                                    <img class="tarjeta__img" src="../assets/Cabecerapie/Logo4.png"/>
+                                    <div class="tarjeta__text">GIFT CARD!</div>
+                                    <div class="tarjeta__num">1234 5678 9101 1213</div>                                   
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form__info form__info--gift">
+                                    <label for="nombre">
+                                        Tu nombre
+                                    </label>
+                                    <input type="text" id="nombre">
+                                </div>
+                                <div class="form__info form__info--gift">
+                                    <label for="amigo">
+                                        Nombre de tu amigo/a
+                                    </label>
+                                    <input type="text" id="amigo">
+                                </div>
+                                <div class="form__info form__info--gift">
+                                    <select>
+                                        <option selected="selected">Selecciona el monto a regalar</option>
+                                        <option>$1000</option>
+                                        <option>$2000</option>
+                                        <option>$3000</option>
+                                        <option>$4000</option>
+                                        <option>$5000</option>
+                                    </select>
+                                </div>
+                                <div class="form__info form__info--gift">
+                                    <label for="email">
+                                        Ingresa el email de tu amigo/a
+                                    </label>
+                                    <input type="email" id="email">
+                                </div>
+                                <div class="form__info form__info--gift">
+                                    <div class="form__infoComentarios">Si deseas, puedes agregar un comentario</div>
+                                    <label for="comentarios">
+                                        <textarea name="comentarios" id="comentarios" cols="100" rows="10" class="comentarios">Agrega tu comentario aqui...</textarea>    
+                                    </label>
+                                </div>
+                                <!--Boton de envio de formulario sin programar-->
+                                <div class="form__boton">
+                                    <button class="boton boton--gift">Enviar</button>  
+                                </div>                               
+                        </form>           
+                    </div>                    
+            </article>                
+            <!--Pie de pagina-->
+            <footer class="pie pie--turnos">
+                <!--Datos del cliente-->
+                <div class="pie__informacion">
+                    <div>MICAELA MORALES</div>
+                    <div>Colorista profesional</div>
+                    <div>Bahia Blanca, Buenos Aires, Argentina.</div>
+                </div>
+                <!--Enlaces a redes sociales-->
+                <!--Logo inferior-->
+                <img class="logo logo--inferior" src="../assets/Cabecerapie/Logo4.png">
+                <!--Enlaces a redes sociales-->
+                <ul class="pie__redes">
+                    <li class="pie__lista"><a href="https://www.instagram.com/micaelamorales.c" target="_blank"><img
+                                src="../assets/Cabecerapie/Instagram.png" alt="Enlace a Instagram" width="30px" /></a></li>
+                    <li class="pie__lista"><a
+                            href="https://api.whatsapp.com/send?phone=+5492914133736&text=Hola!%20Necesito%20hacerte%20una%20consulta!"
+                            target="_blank"><img src="../assets/Cabecerapie/Whatsapp.png" alt="Enlace a Whatsapp" width="30px" /></a></li>
+                </ul>
+            </footer>
+        </main>    
+    </body>
+</html>
