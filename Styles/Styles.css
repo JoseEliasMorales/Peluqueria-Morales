@@ -15,8 +15,9 @@ a{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff;       
 }
+
 
 /* Formato Grid de la pagina Inicio */
 .body{   
@@ -92,9 +93,8 @@ a{
     z-index: 1;
 }
 
-.menu__lista{
+.menu__listaDesp{
     padding: 20px;
-    border-top: 1px solid #838383;
 }
 
 .checkbtn:checked  ~.cabecera__menuDesp{
@@ -512,6 +512,10 @@ a{
     height: 550px;
     padding: 15px;
 }
+
+
+
+
 
 .sub__card{
     padding: 10px;

@@ -18,6 +18,29 @@
         margin-right: 10px;
     }
 
+    .menu__lista{
+        position: relative;
+    }
+
+    .menu__lista::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 4px;
+        width: 0;
+        right: 0px;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    .menu__lista:hover::after{
+        width: 100%;
+    }
+
+    .menu__lista:hover::after{
+        width: 100%;
+    }
+
     .cabecera_menuDesp{
         display: none;
     }
