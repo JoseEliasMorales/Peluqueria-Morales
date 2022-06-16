@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 .cuerpo{
-    background-image: url(../assets/Inicio/fondo.jpg);
+    background-image: url(../assets/Inicio/portada.jpg);
     min-height: 100vh;
     background-size: cover;
     display: flex;
@@ -27,9 +27,7 @@ a{
     align-items: center;
 }
 
-.logo{
-    max-width: 25vh;
-}
+
 .linea{
     content: "";
     width: 35vh;
@@ -38,14 +36,15 @@ a{
 }
 
 .barra{
+    background-color: #000000;
+    
+}
+
+.barra__iconos{
     list-style-type: none;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 09px;
-    color: #ffffff;
-    justify-content: space-around;
     margin-bottom: 0;
     padding-left: 0;
 }
+
+
 

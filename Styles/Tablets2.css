@@ -1,0 +1,14 @@
+@media screen and (min-width:992px) {
+    .cuerpo{
+        background-image: url(../assets/Inicio/Portada2.jpg);
+        flex-direction: row;
+        
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
