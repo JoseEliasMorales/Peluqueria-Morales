@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cuerpo{
+    background-image: url(../assets/Inicio/fondo.jpg);
+    min-height: 100vh;
+    min-width: 100vh;
+    background-size: cover;
+
+}
+
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo{
+    max-width: 30vh;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    width: max-content;
+
+}
+
+.nav__li{
+    width: fit-content;
+    padding: 10px;
+}
