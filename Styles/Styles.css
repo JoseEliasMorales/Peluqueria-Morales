@@ -160,6 +160,23 @@ a{
 .cuerpo__logo {
     grid-area: logo;
     justify-self: center;
+    animation-duration: 5s;
+    animation-name: aparece;
+    
+}
+
+@keyframes aparece{
+    0%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0.5s;
+    }
+    
+    100%{
+        opacity:1;
+    }
 }
 
 .cuerpo__frase {
@@ -168,6 +185,25 @@ a{
     align-self: center;
     text-align: center;
     text-shadow: 2px 3px 2px #ffffff;
+    animation-duration: 3s;
+    animation-name: deslizar;
+}
+
+@keyframes deslizar{
+    0%{
+        opacity:0;
+        margin-left: -200%;
+    }
+
+    75%{
+        opacity: 0;
+    }
+
+    100%{
+        align-self: center;
+        text-align: center;
+        opacity: 1;
+    }
 }
 
 .cuerpo__fraseLinea1 {
@@ -263,13 +299,13 @@ a{
     height: 30px;
     border-radius: 5px;
     color: #fff;
-    background-color: #272727;
+    background-image: linear-gradient(to top, #646464, #2c2c2c);
     position: absolute;
 }
 
 .boton:hover{
     color: #272727;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #ffffff, #a5a3a3);
 }
 
 .pie--turnos{

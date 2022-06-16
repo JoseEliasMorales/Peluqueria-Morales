@@ -67,7 +67,27 @@
     .cuerpo__frase{
         text-align: left;
         margin-left: 5%;
+        animation-duration: 3s;
+        animation-name: deslizar2;
     }
+
+    @keyframes deslizar2{
+        0%{
+            opacity:0;
+            margin-left: -200%;
+        }
+    
+        75%{
+            opacity: 0;
+        }
+    
+        100%{
+            margin-left:5%;
+            opacity: 1;
+        }
+    }
+
+
 
     .cuerpo__fraseLinea1 {
         font-size: 35px;
