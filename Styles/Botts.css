@@ -3,39 +3,49 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 .cuerpo{
     background-image: url(../assets/Inicio/fondo.jpg);
     min-height: 100vh;
-    min-width: 100vh;
     background-size: cover;
-
-}
-
-
-.caja{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.inicio{
     gap: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .logo{
-    max-width: 30vh;
+    max-width: 25vh;
+}
+.linea{
+    content: "";
+    width: 35vh;
+    height: 1px;
+    background-color: #272727;
 }
 
-.nav{
-    list-style: none;
+.barra{
+    list-style-type: none;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    color: white;
-    text-transform: uppercase;
-    font-size: 25px;
-    width: max-content;
-
+    font-size: 09px;
+    color: #ffffff;
+    justify-content: space-around;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-.nav__li{
-    width: fit-content;
-    padding: 10px;
-}
