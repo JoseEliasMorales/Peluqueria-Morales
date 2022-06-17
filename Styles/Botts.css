@@ -46,6 +46,8 @@ a{
 
 /* Comienzo turnos */
 
+
+/* Cabecera de las demas paginas */
 .container-fluid{
     padding: 0;
 }
@@ -64,7 +66,7 @@ a{
 
 
 
-.logo{
+.logoCab{
     width: 200px;
 }
 
@@ -72,6 +74,14 @@ a{
     color: #ffffff;
 }
 
+/* Footers de las demas paginas */
+.pie{
+    color: #ffffff;
+}
 
-
+.barra__iconos--pie{
+    width: 200px;
+    flex-direction: row;
+    background-image: none;
+}
 

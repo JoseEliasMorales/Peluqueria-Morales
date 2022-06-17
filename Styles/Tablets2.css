@@ -17,7 +17,6 @@
         background-image: linear-gradient(to right, #000000, #1a1919);
         width: 22%;
         height: 377px;
-        margin-left: -13px;
         flex-direction: column;
         border-radius: 0px 6px 6px 0px;
         -webkit-border-radius: 0px 6px 6px 0px;
@@ -25,6 +24,13 @@
         -ms-border-radius: 0px 6px 6px 0px;
         -o-border-radius: 0px 6px 6px 0px;
     }
+
+    .barra__iconos--pie{
+        width: 200px;
+        flex-direction: row;
+        background-image: none;
+    }
+    
 
     .barra__lista{
         border-bottom: 1px solid #000000;
@@ -43,4 +49,7 @@
         border-radius: 0px 6px 6px 0px;
     }
     
+    .barra__lista--pie:hover{
+        background-image: none;
+    }
 }
