@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+/* Comienzo de Inicio */
 .cuerpo{
     background-image: url(../assets/Inicio/portada.jpg);
     min-height: 100vh;
@@ -30,13 +31,6 @@ a{
 }
 
 
-.linea{
-    content: "";
-    width: 35vh;
-    height: 1px;
-    background-color: #272727;
-}
-
 .barra{
     background-color: #000000;
     
@@ -47,6 +41,37 @@ a{
     margin-bottom: 0;
     padding-left: 0;
 }
+
+/* Fin de Inicio */
+
+/* Comienzo turnos */
+
+.container-fluid{
+    padding: 0;
+}
+
+.navbar{
+    background-color: #000000;
+    --bs-navbar-color:#ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+    text-align: center;
+}
+
+
+
+.logo{
+    width: 200px;
+}
+
+.icono{
+    color: #ffffff;
+}
+
 
 
 
