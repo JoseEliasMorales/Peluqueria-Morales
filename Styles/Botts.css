@@ -42,6 +42,10 @@ a{
     padding-left: 0;
 }
 
+.iconos__logo{
+    display: none;
+}
+
 /* Fin de Inicio */
 
 /* Comienzo turnos */

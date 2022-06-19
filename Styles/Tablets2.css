@@ -15,6 +15,13 @@
         width: 100%;
     }
 
+    .iconos__logo{
+        display: flex;
+        flex-direction: row;
+        margin: 60px;
+        width: 600px;
+    }
+
     /* barra lateral Inicio */
     .barra__iconos{
         background-image: linear-gradient(to right, #000000, #1a1919);
