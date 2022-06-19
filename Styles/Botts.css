@@ -113,8 +113,7 @@ a{
 .turnos{
     background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
     background-size: cover;
-    height: 80vh;
-    
+    min-height: 80vh;
     
 }
 
@@ -126,3 +125,60 @@ a{
     
 }
 
+/* Fin turnos */
+
+/* Comienzo Gift-Card */
+
+.tarjeta{
+    grid-area: tarjeta;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+}
+
+.tarjeta__caja {  
+    position: relative;   
+    width: 240px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #000000;
+    background-image: url(../assets/GiftCard/tarjeta.png);
+    background-size: cover;
+}
+
+.tarjeta__img {
+    position: absolute;
+    width: 65px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 60%;
+}
+
+.tarjeta__num {
+    position: absolute;
+    color: #c9c0c0;
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+.tarjeta__text {
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    margin-left: 30%;
+    margin-top: 25%;
+    color: whitesmoke;
+}
+
+.bg-body{
+    background-image: linear-gradient(to bottom, #6d6d6d, #3a3a3a);
+}
+
+.giftCard{
+    background-image: url(../assets/GiftCard/peluG2.jpg);
+    background-size: cover;
+}

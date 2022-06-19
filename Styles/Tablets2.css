@@ -63,5 +63,12 @@
         background-image: none;
     }
 
+    /* Turnos */
+
+    .turnos{
+        background-image: url(../assets/Turnos/imgturnos.jpg);
+        background-size: cover;
+    }
+
     
 }
