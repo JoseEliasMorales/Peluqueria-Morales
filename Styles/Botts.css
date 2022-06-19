@@ -64,10 +64,15 @@ a{
     text-align: center;
 }
 
+.navbar-nav{
+    --bs-nav-link-hover-color: #777777 ;
+}
+
 
 
 .logoCab{
     width: 200px;
+    padding-left: 20px;
 }
 
 .icono{
@@ -75,13 +80,45 @@ a{
 }
 
 /* Footers de las demas paginas */
+
+.footer{
+    margin-top: 10px;
+}
+
 .pie{
     color: #ffffff;
+    height: fit-content;
+    font-size: 11px;
+}
+
+.imagen{
+    height: fit-content;
+
+
 }
 
 .barra__iconos--pie{
-    width: 200px;
+    width: 147px;
     flex-direction: row;
     background-image: none;
+}
+/* fin footer */
+
+/* Comienzo pagina Turnos */
+
+.turnos{
+    background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
+    background-size: cover;
+    height: 80vh;
+    
+    
+}
+
+.titulo{
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration: solid #000000;
+    
 }
 

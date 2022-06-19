@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="container-fluid">
-        <header>
+        <header class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html"><img class="logoCab" src="../assets/Cabecerapie/Logo4.png"></a>
@@ -41,13 +41,60 @@
                 </div>
               </nav>
         </header>
-        <article>
+        <article class="row turnos align-items-center">
+            <section class="container col-10 col-lg-8 col-xxl-6">
+                <div class="titulo">Reserva tu turno</div>
+                <div class="">
+                    <form class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nombre" placeholder="Juan Ramon">
+                            <label for="nombre">Nombre y Apellido</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" id="telefono" placeholder="1234567890">
+                            <label for="telefono">Telefono</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="Email" placeholder="email@ejemplo.com">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="permiso" id="pregunta">
+                            <label class="form-check-label" for="pregunta">
+                              Si
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="permiso" id="pregunta2" checked>
+                            <label class="form-check-label" for="pregunta2">
+                              No
+                            </label>
+                          </div>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Elige el trabajo que deseas hacerte</option>
+                            <option value="1">Corte</option>
+                            <option value="2">Corte y Nutricion</option>
+                            <option value="3">Color</option>
+                            <option value="4"> Otro</option>
+                          </select>
+                          <div class="mb-3">
+                            <label for="comentarios" class="form-label"></label>
+                            <textarea class="form-control" id="comentarios" rows="3">Puedes dejarnos la descripcion del trabajo aqui...</textarea>
+                          </div>
+                    </form>
+
+                </div>
+            
+
+            </section>
+            
+            
 
         </article>
-        <footer>
+        <footer class="row">
             <nav class="navbar">
-                <div class="container">
-                    <div class="text-center fs-6 pie">
+                <div class="container footer">
+                    <div class="text-center pie">
                         <p class="text-uppercase">Micaela Morales</p>
                         <p>Colorista Profesional</p>
                         <p>Bahia Blanca, Buenos Aires, Argentina</p>
@@ -55,7 +102,7 @@
                     <a class="navbar-brand d-none d-lg-block" href="../index.html"><img class="logoCab" src="../assets/Cabecerapie/Logo4.png"></a>
                     <ul class="barra__iconos barra__iconos--pie d-flex justify-content-around align-items-center">
                         <li class="barra__lista barra__lista--pie d-flex align-items-center justify-content-center" title="Whatsapp" alt="Whatsapp"><a href="https://api.whatsapp.com/send?phone=+5492914133736&text=Hola!%20Necesito%20hacerte%20una%20consulta!"><ion-icon name="logo-whatsapp" size="large"></ion-icon></a></li>
-                        <li class="barra__lista barra__lista--pie d-flex align-items-center justify-content-center" title="Instagram" alt="Instagram"><a href="https://www.instagram.com/micaelamorales.c"><ion-icon name="logo-instagram" size="large"></ion-icon></ion-icon></a></li>
+                        <li class="barra__lista barra__lista--pie d-flex align-items-center justify-content-center" title="Instagram" alt="Instagram"><a href="https://www.instagram.com/micaelamorales.c"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
                     </ul>
 
                 </div>
