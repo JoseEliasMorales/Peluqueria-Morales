@@ -1,0 +1,46 @@
+.container-fluid{
+    padding: 0;
+    .row{
+        .navbar{
+            background-color: #000000;
+            --bs-navbar-color:#ffffff;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            .container{
+                .navbar-brand{
+                    .logoCab{
+                        width: 200px;
+                        padding-left: 20px;
+                    }
+                }
+                .navbar-toggler{
+                    .icono{
+                        color: #ffffff;
+                    }
+                }
+//menu desplegable
+                .collapse{
+//cambio de color navbar
+                    .navbar-nav{
+                        --bs-nav-link-hover-color: #777777 ;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
