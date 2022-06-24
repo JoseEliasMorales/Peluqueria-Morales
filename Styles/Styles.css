@@ -1,19 +1,28 @@
+.inicio footer .navbar .container .pie {
+  color: #ffffff;
+  height: fit-content;
+  font-size: 11px;
+}
+.inicio footer .navbar .container .barra__iconos--pie {
+  width: 147px;
+  flex-direction: row;
+  background-image: none;
+}
+
 .inicio {
   background-image: linear-gradient(to bottom, #000000, #444444);
 }
-.inicio .navbar .container .navbar-brand .logoCab {
+.inicio .row .navbar .container .navbar-brand .logoCab {
   width: 150px;
 }
-.inicio .navbar .container .navbar-toggler {
-  border: none;
+.inicio .row .navbar .container .navbar-toggler {
+  --bs-navbar-toggler-border-color:none;
   color: #ffffff;
 }
-.inicio .navbar .container .collapse {
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-.inicio .navbar .container .collapse .navbar-nav .nav-item {
-  width: 100px;
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=Styles.css.map */

@@ -14,3 +14,7 @@
 @import "./views/servicios";
 @import "./views/contact";
 
+a{
+    text-decoration: none;
+    color: $font-color-nav;
+}
