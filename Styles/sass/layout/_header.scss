@@ -1,13 +1,33 @@
-.container{
-    .navbar{
-        .container{
-            .navbar-brand{
-                .logo{
-                    width: 100px;
+.inicio{
+    background-image: linear-gradient(to bottom, #000000, #444444);
+    
+        .navbar{
+            
+            .container{
+                .navbar-brand{                 
+                    .logoCab{
+                        width: 150px;
+                    }
                 }
-            }
-        }
-    }
+                .navbar-toggler{
+                    border: none;
+                    color: $font-color-nav;
+                }
+                .collapse{
+                    flex-wrap: nowrap;
+                    gap: 10px;
+                    .navbar-nav{
+                        
+                        
+                        
+                        .nav-item{
+                            width: 100px;
+                                                 
+                        }
+                    }                                
+                }
+            }           
+        }   
 }
 
 
