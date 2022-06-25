@@ -6,11 +6,15 @@
                     color: #ffffff;
                     height: fit-content;
                     font-size: 11px;
-                }               
-                .barra__iconos--pie{
-                    width: 147px;
+                }           
+                .pie__cajaIconos{
+                    width: fit-content;
                     flex-direction: row;
                     background-image: none;
+                    gap: 1rem;
+                    .pie__iconos{
+                        
+                    }
                 }
             }
         }

@@ -1,20 +1,19 @@
 .inicio{
-    background-image: linear-gradient(to bottom, #000000, #444444);
-        .row{
-            .navbar{
-                .container{
-                    .navbar-brand{
-                        .logoCab{
-                            width: 150px;
-                        }
+    .row{
+        .navbar{
+            .container{
+                .navbar-brand{
+                    .logoCab{
+                        width: 150px;
                     }
-                    .navbar-toggler{
-                        --bs-navbar-toggler-border-color:none;
-                        color: $font-color-nav;
-                    }                   
                 }
+                .navbar-toggler{
+                    --bs-navbar-toggler-border-color:none;
+                    color: $font-color-nav;
+                }                   
             }
-        }  
+        }
+    }  
 }
 
 

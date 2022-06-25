@@ -1,0 +1,19 @@
+.logoCab{
+    width: 150px;
+}
+
+.fondo{
+    width: 100%;
+}
+
+@media screen and (min-width:992px) {
+    .inicio{
+        .container-fluid{
+            .fondo{
+                width: 65%;
+                margin-top: 0;
+                margin-left: -10%;
+            }
+        }
+    }
+}
