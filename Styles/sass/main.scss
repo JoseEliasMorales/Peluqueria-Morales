@@ -3,6 +3,7 @@
 
 @import "./base/typo";
 
+@import "./components/animations";
 @import "./components/buttons";
 
 @import "./layout/footer";
@@ -14,6 +15,11 @@
 @import "./views/giftCard";
 @import "./views/servicios";
 @import "./views/contact";
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 a{
     text-decoration: none;

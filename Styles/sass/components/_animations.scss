@@ -1,0 +1,35 @@
+@keyframes desplazamientoLogo{
+    0%{
+        opacity: 0;
+        padding-left: 100%;
+        width: 300px;
+    }
+
+    75%{
+        opacity: 0;
+        padding-left: 50%;
+    }
+
+    100%{
+        opacity: 1;
+        padding-left: 0;
+    }
+
+}
+
+@keyframes desplazamientoNombre{
+    0%{
+        opacity: 0;
+        padding-right: 100%;
+    }
+
+    75%{
+        opacity: 0;
+        padding-right: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+        padding-right: 0;
+    }
+}
