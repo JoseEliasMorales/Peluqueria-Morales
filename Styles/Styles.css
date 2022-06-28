@@ -277,7 +277,7 @@ form .input:focus::placeholder {
   padding: 20px;
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen {
-  background-image: url(../../../assets/Servicios/Corte1.jpeg);
+  background-image: url(../../assets/Servicios/Corte1.jpeg);
   background-size: cover;
   border-radius: 10px;
   width: 17rem;
@@ -288,22 +288,22 @@ form .input:focus::placeholder {
   -o-border-radius: 10px;
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--global {
-  background-image: url(../../../assets/Servicios/Global1.jpeg);
+  background-image: url(../../assets/Servicios/Global1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--bala {
-  background-image: url(../../../assets/Servicios/Bala1.jpeg);
+  background-image: url(../../assets/Servicios/Bala1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--flam {
-  background-image: url(../../../assets/Servicios/Flam1.jpeg);
+  background-image: url(../../assets/Servicios/Flam1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--baño {
-  background-image: url(../../../assets/Servicios/Baño1.jpeg);
+  background-image: url(../../assets/Servicios/Baño1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--gorra {
-  background-image: url(../../../assets/Servicios/Gorra1.jpeg);
+  background-image: url(../../assets/Servicios/Gorra1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--local {
-  background-image: url(../../../assets/Servicios/Local1.jpeg);
+  background-image: url(../../assets/Servicios/Local1.jpeg);
 }
 
 .inicio .contacto {
