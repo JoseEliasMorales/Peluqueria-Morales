@@ -1,0 +1,36 @@
+.inicio{
+    .turnos{
+        background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
+        background-size: cover;
+        min-height: 80vh;
+        .container{
+            .titulo{
+                text-align: center;
+                font-size: 35px;
+                color: #f0f0f0;            
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .inicio{
+        .turnos{
+            background-image: url(../assets/Turnos/imgturnos.jpg);
+            background-size: cover;
+            .container{
+                .titulo{
+                    color: #1a1919;
+                }
+            }
+        }
+        
+    }    
+}
+
+
+
+
+
+
+

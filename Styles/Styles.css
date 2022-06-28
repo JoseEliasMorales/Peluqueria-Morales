@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 .logoCab {
   width: 150px;
 }
@@ -13,6 +14,10 @@
     margin-left: -10%;
   }
 }
+.inicio {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
 @keyframes desplazamientoLogo {
   0% {
     opacity: 0;
@@ -42,6 +47,42 @@
     padding-right: 0;
   }
 }
+.button {
+  padding: 5px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 14px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.button:hover {
+  color: #e8e8e8;
+}
+.button:hover::before {
+  width: 100%;
+}
+
 .inicio footer .navbar .container .pie {
   color: #ffffff;
   height: fit-content;
@@ -52,6 +93,34 @@
   flex-direction: row;
   background-image: none;
   gap: 6rem;
+}
+
+form {
+  backdrop-filter: blur(10px);
+}
+form .input {
+  line-height: 28px;
+  width: 100%;
+  border: 2px solid transparent;
+  border-bottom-color: #777;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+form .input:focus, form .input:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+form .input::placeholder {
+  color: rgb(34, 34, 34);
+}
+form .input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .inicio .row .navbar .container .navbar-brand .logoCab {
@@ -93,7 +162,7 @@
   .inicio .inicio__fondo .inicio__logoNombre {
     position: absolute;
     flex-direction: row;
-    background-color: #ffffff;
+    backdrop-filter: blur(15px);
     justify-content: center;
     width: 50%;
     height: 400px;
@@ -116,6 +185,77 @@
     animation-name: desplazamientoNombre;
   }
 }
+.inicio .turnos {
+  background-image: url(../assets/Turnos/beautiful-girl-with-long-hair.jpg);
+  background-size: cover;
+  min-height: 80vh;
+}
+.inicio .turnos .container .titulo {
+  text-align: center;
+  font-size: 35px;
+  color: #f0f0f0;
+}
+
+@media screen and (min-width: 992px) {
+  .inicio .turnos {
+    background-image: url(../assets/Turnos/imgturnos.jpg);
+    background-size: cover;
+  }
+  .inicio .turnos .container .titulo {
+    color: #1a1919;
+  }
+}
+.inicio .giftCard {
+  background-image: url(../assets/GiftCard/peluG2.jpg);
+  background-size: cover;
+}
+.inicio .giftCard .container .titulo {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  color: #1a1919;
+}
+.inicio .giftCard .container form .tarjeta {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.inicio .giftCard .container form .tarjeta .tarjeta__caja {
+  position: relative;
+  width: 240px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #000000;
+  background-image: url(../assets/GiftCard/tarjeta.png);
+  background-size: cover;
+}
+.inicio .giftCard .container form .tarjeta .tarjeta__caja .tarjeta__img {
+  position: absolute;
+  width: 65px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 60%;
+}
+.inicio .giftCard .container form .tarjeta .tarjeta__caja .tarjeta__text {
+  position: absolute;
+  font-size: 16px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  margin-left: 30%;
+  margin-top: 25%;
+  color: whitesmoke;
+}
+.inicio .giftCard .container form .tarjeta .tarjeta__caja .tarjeta__num {
+  position: absolute;
+  color: #c9c0c0;
+  margin-top: 50%;
+  margin-left: 10%;
+}
+
+/* Color de fondo de formulario Gift */
 * {
   margin: 0;
   padding: 0;

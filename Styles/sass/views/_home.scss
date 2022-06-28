@@ -35,7 +35,8 @@
             .inicio__logoNombre{
                 position: absolute;
                 flex-direction: row;
-                background-color: $theme-color2;
+                // background-color: $theme-color2;
+                backdrop-filter: blur(15px);
                 justify-content: center;
                 width: 50%;
                 height: 400px;

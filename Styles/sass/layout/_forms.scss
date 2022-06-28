@@ -1,0 +1,28 @@
+form{
+    backdrop-filter: blur(10px);
+    .input{
+        line-height: 28px;
+        width: 100%;
+        border: 2px solid transparent;
+        border-bottom-color: #777;
+        padding: .2rem 0;
+        outline: none;
+        background-color: transparent;
+        color: #0d0c22;
+        transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        &:focus, &:hover{
+            outline: none;
+            padding: .2rem 1rem;
+            border-radius: 1rem;
+            border-color: #7a9cc6;
+        }
+        &::placeholder{
+            color: rgb(34, 34, 34);
+        }
+        &:focus::placeholder{
+            opacity: 0;
+            transition: opacity .3s;
+        }
+    }               
+}
+             
