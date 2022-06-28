@@ -221,6 +221,10 @@ form .input:focus::placeholder {
   background-image: url(../assets/GiftCard/peluG2.jpg);
   background-size: cover;
 }
+.inicio .giftCard .container .titulo {
+  color: #000000;
+  font-weight: 600;
+}
 .inicio .giftCard .container form .tarjeta {
   display: flex;
   justify-content: center;
