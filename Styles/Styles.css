@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 .logoCab {
   width: 150px;
@@ -16,6 +17,22 @@
 }
 .inicio {
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  color: #f0f0f0;
 }
 
 @keyframes desplazamientoLogo {
@@ -92,7 +109,7 @@
   width: fit-content;
   flex-direction: row;
   background-image: none;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 form {
@@ -116,7 +133,7 @@ form .input:focus, form .input:hover {
   border-color: #7a9cc6;
 }
 form .input::placeholder {
-  color: rgb(34, 34, 34);
+  color: rgb(17, 17, 17);
 }
 form .input:focus::placeholder {
   opacity: 0;
@@ -190,11 +207,6 @@ form .input:focus::placeholder {
   background-size: cover;
   min-height: 80vh;
 }
-.inicio .turnos .container .titulo {
-  text-align: center;
-  font-size: 35px;
-  color: #f0f0f0;
-}
 
 @media screen and (min-width: 992px) {
   .inicio .turnos {
@@ -208,12 +220,6 @@ form .input:focus::placeholder {
 .inicio .giftCard {
   background-image: url(../assets/GiftCard/peluG2.jpg);
   background-size: cover;
-}
-.inicio .giftCard .container .titulo {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 500;
-  color: #1a1919;
 }
 .inicio .giftCard .container form .tarjeta {
   display: flex;
@@ -256,14 +262,61 @@ form .input:focus::placeholder {
 }
 
 /* Color de fondo de formulario Gift */
-* {
-  margin: 0;
-  padding: 0;
+.inicio .servicios {
+  background-color: #ffffff;
+}
+.inicio .servicios .cajaTarjetas {
+  padding: 20px;
+  gap: 30px;
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad {
+  padding: 20px;
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen {
+  background-image: url(../../../assets/Servicios/Corte1.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+  width: 17rem;
+  height: 410px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--global {
+  background-image: url(../../../assets/Servicios/Global1.jpeg);
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--bala {
+  background-image: url(../../../assets/Servicios/Bala1.jpeg);
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--flam {
+  background-image: url(../../../assets/Servicios/Flam1.jpeg);
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--baño {
+  background-image: url(../../../assets/Servicios/Baño1.jpeg);
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--gorra {
+  background-image: url(../../../assets/Servicios/Gorra1.jpeg);
+}
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--local {
+  background-image: url(../../../assets/Servicios/Local1.jpeg);
 }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
+.inicio .contacto {
+  background-image: linear-gradient(to top, #410a24, #922457, #410a24);
+  min-height: 85vh;
+  min-width: 100%;
+}
+.inicio .contacto .titulo--contacto {
+  text-align: left;
+  padding: 30px;
+  border-bottom: 1px dotted #c9c0c0;
+}
+.inicio .contacto .d-flex .contacto__form {
+  padding: 40px;
+}
+.inicio .contacto .d-flex .contacto__datos {
+  padding: 40px;
 }
 
 /*# sourceMappingURL=Styles.css.map */

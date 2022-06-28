@@ -1,7 +1,7 @@
 @import "./utilities/variables";
 @import "./utilities/images";
 
-@import "./base/typo";
+@import "./base/general";
 
 @import "./components/animations";
 @import "./components/buttons";
@@ -16,13 +16,4 @@
 @import "./views/servicios";
 @import "./views/contact";
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-    color: $font-color-nav;
-}
 
