@@ -13,7 +13,7 @@
             background-size: cover;
             .container{
                 .titulo{
-                    color: #1a1919;
+                    color: map-get($forms, turnos );
                 }
             }
         }       

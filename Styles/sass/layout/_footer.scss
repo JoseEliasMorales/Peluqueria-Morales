@@ -3,9 +3,8 @@
         .navbar{
             .container{
                 .pie{
-                    color: #ffffff;
+                    @include colorSize (#ffffff, 11px);
                     height: fit-content;
-                    font-size: 11px;
                 }           
                 .pie__cajaIconos{
                     width: fit-content;

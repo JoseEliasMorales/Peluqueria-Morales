@@ -16,7 +16,16 @@ a{
 }
 
 .titulo{
-    text-align: center;
-    font-size: 35px;
-    color: #f0f0f0;            
+    @include colorSize(#f0f0f0, 35px);
+    text-align: center; 
+    &--contacto{
+        @extend .titulo;
+        text-align: left;
+        padding: 30px;
+        border-bottom: 1px dotted #c9c0c0;
+        }   
+    &--sub{
+        @extend .titulo;
+        font-size: 28px;
+    }
 }
