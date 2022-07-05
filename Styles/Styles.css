@@ -16,12 +16,13 @@
     margin-left: -10%;
   }
 }
-.inicio {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
 * {
   margin: 0;
+  padding: 0;
+}
+
+.inicio {
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 0;
 }
 
@@ -36,14 +37,19 @@ a {
   text-align: center;
 }
 .titulo--contacto {
+  font-size: 25px;
   text-align: left;
-  padding: 30px;
   border-bottom: 1px dotted #c9c0c0;
 }
 .titulo--sub {
   font-size: 60px;
 }
 
+@media screen and (min-width: 992px) {
+  .titulo--contacto {
+    font-size: 50px;
+  }
+}
 @keyframes desplazamientoLogo {
   0% {
     opacity: 0;
@@ -194,7 +200,7 @@ a {
 }
 
 .form-turnos {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   color: #f5f5f5;
 }
 .form-turnos .form-floating .input {
@@ -234,7 +240,7 @@ a {
   }
 }
 .form-gift {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   color: #0d0c22;
 }
 .form-gift .form-floating .input {
@@ -275,6 +281,7 @@ a {
 }
 .inicio .row .navbar .container .navbar-brand .logoCab {
   width: 150px;
+  padding-left: 10px;
 }
 .inicio .row .navbar .container .navbar-toggler {
   --bs-navbar-toggler-border-color:none;
@@ -384,12 +391,12 @@ a {
 }
 .inicio .giftCard .container form .tarjeta .tarjeta__caja .tarjeta__text {
   color: whitesmoke;
-  font-size: 16px;
+  font-size: 40px;
+  font-family: "The Nautigal", cursive;
   position: absolute;
-  font-family: "Satisfy", cursive;
   font-weight: 400;
-  margin-left: 30%;
-  margin-top: 25%;
+  margin-left: 25%;
+  margin-top: 20%;
 }
 .inicio .giftCard .container form .tarjeta .tarjeta__caja .tarjeta__num {
   position: absolute;

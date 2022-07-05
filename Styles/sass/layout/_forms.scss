@@ -7,7 +7,7 @@ $forms:(
 
 @each $color, $form in $forms{
     .form-#{$color}{
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         color: $form;
         .form-floating{
             .input{

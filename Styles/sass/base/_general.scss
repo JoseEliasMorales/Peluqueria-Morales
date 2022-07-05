@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
 
-// Fuente del documento
-.inicio{
-    font-family: 'IBM Plex Sans', sans-serif;
-}
 
 *{
     margin: 0;
+    padding: 0;
+}
+
+// Fuente del documento
+.inicio{
+    font-family: 'IBM Plex Sans', sans-serif;
     padding: 0;
 }
 
@@ -21,12 +23,21 @@ a{
     text-align: center; 
     &--contacto{
         @extend .titulo;
+        font-size: 25px;
         text-align: left;
-        padding: 30px;
         border-bottom: 1px dotted #c9c0c0;
         }   
     &--sub{
         @extend .titulo;
         font-size: 60px;
     }
+}
+
+@media screen and (min-width:992px) {
+    .titulo{
+        &--contacto{
+            font-size: 50px;
+        }
+    }
+    
 }
