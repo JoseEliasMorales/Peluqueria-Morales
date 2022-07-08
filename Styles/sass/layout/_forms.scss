@@ -37,6 +37,8 @@ $forms:(
         }
         
     }
+
+    //Cambio de color en la fuente de los inputs
     @media screen and (min-width:992px) {
         .form-#{$color}{
             color: #0d0c22;

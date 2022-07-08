@@ -11,7 +11,28 @@
                 .navbar-toggler{
                     --bs-navbar-toggler-border-color:none;
                     color: $font-color-nav;
-                }                   
+                }   
+                .collapse{
+                    .navbar-nav{
+                        .menuItem{
+                            .nav-link{
+                                color: $font-color-nav;
+                            }
+                            &:hover{
+                                background-color: $theme-color2;
+                                border-radius: 15px;
+                                box-shadow: 0px 15px 20px rgba(243, 243, 243, 0.4);
+                                transform: translateY(-7px);
+                                .nav-link{
+                                    color: $theme-color1;
+                                }
+                            } 
+                            &:active{
+                                transform: translateY(-1px);
+                            }                   
+                        }
+                    }
+                }                
             }
         }
     }  

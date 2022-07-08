@@ -4,7 +4,6 @@ $botones:(
     contacto: rgb(223, 183, 75),
 );
 
-
 @each $nombre, $boton in $botones{
     .boton-#{$nombre}{
         @include colorSize (#212121, 14px);
@@ -19,6 +18,8 @@ $botones:(
         box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
         transition: all 250ms;
         overflow: hidden;
+
+    //Animacion boton
         &::before {
             content: "";
             position: absolute;
