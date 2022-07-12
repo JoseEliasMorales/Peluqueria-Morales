@@ -35,6 +35,11 @@
                 .cajaTarjetas__imagen--local{
                     background-image: url(../assets/Servicios/Local1.jpeg);
                 }
+                .card-body{
+                    .card-title{
+                        font-weight: 600;
+                    }
+                }
             }           
         }    
     }

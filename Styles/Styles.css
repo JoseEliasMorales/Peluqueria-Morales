@@ -459,6 +459,9 @@ a {
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--local {
   background-image: url(../assets/Servicios/Local1.jpeg);
 }
+.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .card-body .card-title {
+  font-weight: 600;
+}
 
 .inicio .contacto {
   background-image: linear-gradient(to top, #410a24, #922457, #410a24);
