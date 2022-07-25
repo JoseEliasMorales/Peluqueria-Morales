@@ -2,6 +2,7 @@
     .giftCard{
         background-image: url(../assets/GiftCard/peluG2.jpg);
         background-size: cover;
+        padding-bottom: 20px;
         .container{
             .titulo{
                 color: map-get($forms, gift);

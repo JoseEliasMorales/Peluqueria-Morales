@@ -374,6 +374,7 @@ a {
 .inicio .giftCard {
   background-image: url(../assets/GiftCard/peluG2.jpg);
   background-size: cover;
+  padding-bottom: 20px;
 }
 .inicio .giftCard .container .titulo, .inicio .giftCard .container .titulo--contacto, .inicio .giftCard .container .titulo--sub {
   color: #0d0c22;
