@@ -304,6 +304,7 @@ a {
 
 .inicio {
   background-color: #000000;
+  overflow-x: hidden;
 }
 .inicio .container-fluid .fondo {
   margin-top: 3rem;
@@ -321,7 +322,6 @@ a {
 
 @media screen and (min-width: 992px) {
   .inicio {
-    overflow-x: hidden;
     min-height: 100vh;
   }
   .inicio .inicio__fondo {
