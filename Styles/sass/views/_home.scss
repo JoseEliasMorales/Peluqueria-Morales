@@ -1,6 +1,7 @@
 .inicio{
     background-color: $theme-color1;   
     overflow-x: hidden; 
+    min-height: 100vh;
     .container-fluid{
         .fondo{
             margin-top: 3rem;
@@ -25,7 +26,7 @@
 @media screen and (min-width: 992px){
     .inicio{
         
-        min-height: 100vh;
+        
         .inicio__fondo{
             background-image: linear-gradient(to bottom, #000000, #000000, #ffffff);
             position: relative;

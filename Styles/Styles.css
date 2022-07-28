@@ -305,6 +305,7 @@ a {
 .inicio {
   background-color: #000000;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 .inicio .container-fluid .fondo {
   margin-top: 3rem;
@@ -321,9 +322,6 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  .inicio {
-    min-height: 100vh;
-  }
   .inicio .inicio__fondo {
     background-image: linear-gradient(to bottom, #000000, #000000, #ffffff);
     position: relative;
