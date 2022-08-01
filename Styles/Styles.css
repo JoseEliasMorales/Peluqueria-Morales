@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap");
 .logoCab {
@@ -434,33 +433,14 @@ a {
   padding: 20px;
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen {
-  background-image: url(../assets/Servicios/Corte1.jpeg);
   background-size: cover;
   border-radius: 10px;
-  width: 17rem;
-  height: 410px;
+  max-width: 17rem;
+  max-height: 410px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--global {
-  background-image: url(../assets/Servicios/Global1.jpeg);
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--bala {
-  background-image: url(../assets/Servicios/Bala1.jpeg);
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--flam {
-  background-image: url(../assets/Servicios/Flam1.jpeg);
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--baño {
-  background-image: url(../assets/Servicios/Baño1.jpeg);
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--gorra {
-  background-image: url(../assets/Servicios/Gorra1.jpeg);
-}
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen--local {
-  background-image: url(../assets/Servicios/Local1.jpeg);
 }
 .inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .card-body .card-title {
   font-weight: 600;
