@@ -15,7 +15,7 @@
   <main class="container-fluid inicio">
     <!-- Cabecera -->
     <header class="row">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg d-none">
             <div class="container">
                 <a class="navbar-brand" href="../index.html"><img class="logoCab" src="./assets/Cabecerapie/Logo4.png" alt="Logo Micaela Morales"></a>
                 <!-- Boton de menu desplegable -->
@@ -45,8 +45,8 @@
             </div>
           </nav>
     </header>
-    <article class="container-fluid inicio__fondo">
-        <img src="./assets/Inicio/Foto de Alexander Krivitskiy en Pexels.jpg"  class="fondo" alt="Fondo de mujer rubia con pelo lazio">
+    <section class="inicio__fondo d-flex flex-column align-items-center justify-content-center">
+        <img src="./assets/Inicio/ChicarubiaXS.jpg"  class="fondo" alt="Fondo de mujer rubia con pelo lazio">
         <div class="inicio__logoNombre align-items-center d-flex gap-5">
             <div class="inicio__logo">
                 <img src="./assets/Inicio/Logo6.png" alt="Logo con letras m m" class="logo">
@@ -58,9 +58,91 @@
             </div>
         </div>
         
+    </section>
+    <article class="inicio--servicios">
+        <section class="cajaTarjetas d-flex flex-wrap justify-content-center">
+            <div class="servicios">
+                <h1>SERVICIOS</h1>
+            </div>
+            <!-- Tarjeta Corte -->
+            <div class="card cajaTarjetas__unidad shadow rounded" style="width: 10rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Corte1.jpeg" alt="Corte Pixie"/>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Global -->
+            <div class="card cajaTarjetas__unidad shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Global1.jpeg" alt="Color global en Rojo"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Color Global</h5>
+                  <p class="card-text">Un color que aplica a todo el cabello de manera uniforme.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Balayage -->
+            <div class="card cajaTarjetas__unidad  shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Bala1.jpeg" alt="Mechas balayage en tonos Vainilla"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Balayage</h5>
+                  <p class="card-text">Degrade natural que aporta una gran luminosidad y dimensión. No se distingue dónde empieza y acaba el color.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button"href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Flamboyage -->
+            <div class="card cajaTarjetas__unidad  shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Flam1.jpeg" alt="Flamboyage Rubios Calidos"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mechas Flamboyage</h5>
+                  <p class="card-text">Tecnica Balayge aplicada a mechas con el fin de crear naturalidad, combinando el tono base en las puntas.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Baño -->
+            <div class="card cajaTarjetas__unidad  shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Baño1.jpeg" alt="Renovacion de color"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Baño de color</h5>
+                  <p class="card-text">Técnica para devolver el color a mechas anteriormente hechas. Recomendable hacerlo despues de un mes de realizadas.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Gorra -->
+            <div class="card cajaTarjetas__unidad  shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Gorra1.jpeg" alt="Mechas rubias realizadas con gorra en pelo castaño"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mechas con Gorra</h5>
+                  <p class="card-text">Ideales para tan solo iluminar un poco el cabello o quedar super rubia.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>
+            <!-- Tarjeta Localizadas -->
+            <div class="card cajaTarjetas__unidad  shadow rounded" style="width: 20rem;">
+                <img class="cajaTarjetas__imagen" src="../assets/Servicios/Local1.jpeg" alt="Mechas localizadas"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mechas Localizadas</h5>
+                  <p class="card-text">Mechas muy definidas. Gruesas, medianas o finas. Muchas o pocas. Creando un estilo para cada personalidad.</p>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="boton-card" type="button" href="#">Consultar</button>
+                </div>
+            </div>               
+        </section>
+    
+
     </article>
     <footer>
-      <nav class="navbar">
+      <nav class="navbar d-none">
           <div class="container">
               <div class="text-center">
                   <h6 class="text-uppercase pie">Micaela Morales</h6>

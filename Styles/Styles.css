@@ -6,6 +6,7 @@
 
 .fondo {
   width: 100%;
+  height: 100vh;
 }
 
 @media screen and (min-width: 992px) {
@@ -302,28 +303,26 @@ a {
 }
 
 .inicio {
-  background-color: #000000;
   overflow-x: hidden;
   min-height: 100vh;
 }
-.inicio .container-fluid .fondo {
-  margin-top: 3rem;
+.inicio .inicio__fondo {
+  position: relative;
 }
-.inicio .container-fluid .inicio__logoNombre {
-  margin: 5rem 0rem 5rem 0rem;
+.inicio .inicio__fondo .inicio__logoNombre {
+  position: absolute;
   flex-direction: column;
 }
-.inicio .container-fluid .inicio__logoNombre .inicio__logo .logo {
-  width: 175px;
+.inicio .inicio__fondo .inicio__logoNombre .inicio__logo .logo {
+  width: 20rem;
 }
-.inicio .container-fluid .inicio__logoNombre .inicio__nombre .nombre {
-  width: 175px;
+.inicio .inicio__fondo .inicio__logoNombre .inicio__nombre .nombre {
+  width: 20rem;
 }
 
 @media screen and (min-width: 992px) {
   .inicio .inicio__fondo {
     background-image: linear-gradient(to bottom, #000000, #000000, #ffffff);
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -422,27 +421,24 @@ a {
 }
 
 /* Color de fondo de formulario Gift */
-.inicio .servicios {
-  background-color: #ffffff;
-}
-.inicio .servicios .cajaTarjetas {
+.inicio--servicios .servicios .cajaTarjetas {
   padding: 20px;
   gap: 30px;
 }
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad {
+.inicio--servicios .servicios .cajaTarjetas .cajaTarjetas__unidad {
   padding: 20px;
 }
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen {
+.inicio--servicios .servicios .cajaTarjetas .cajaTarjetas__unidad .cajaTarjetas__imagen {
   background-size: cover;
   border-radius: 10px;
-  max-width: 17rem;
+  max-width: 5rem;
   max-height: 410px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.inicio .servicios .cajaTarjetas .cajaTarjetas__unidad .card-body .card-title {
+.inicio--servicios .servicios .cajaTarjetas .cajaTarjetas__unidad .card-body .card-title {
   font-weight: 600;
 }
 

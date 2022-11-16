@@ -1,22 +1,24 @@
 .inicio{
-    background-color: $theme-color1;   
     overflow-x: hidden; 
     min-height: 100vh;
-    .container-fluid{
+
+    .inicio__fondo{
+        position: relative;
         .fondo{
-            margin-top: 3rem;
+           // margin-top: 3rem;
         }
         .inicio__logoNombre{
-            margin: 5rem 0rem 5rem 0rem;
+            position: absolute;
+            //margin: 5rem 0rem 5rem 0rem;
             flex-direction: column;
             .inicio__logo{
                 .logo{
-                    width:175px;
+                    width:20rem;
                 }                
             }
             .inicio__nombre{
                 .nombre{
-                    width: 175px;
+                    width: 20rem;
                 }                
             }
         }
@@ -27,7 +29,6 @@
     .inicio{       
         .inicio__fondo{
             background-image: linear-gradient(to bottom, #000000, #000000, #ffffff);
-            position: relative;
             display: flex;
             flex-direction: row;
             align-items: center;
